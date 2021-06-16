@@ -1,3 +1,12 @@
+@font-face {
+	font-family: "Gilroy";
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+  src: url("./fonts/Gilroy-Regular.woff2") format("woff2"),
+  url("./fonts/Gilroy-Regular.woff") format("woff");
+}
+
 html {
   box-sizing: border-box;
 }
@@ -11,6 +20,7 @@ html {
 body {
   margin: 0 auto;
   background-color: #d2d2d2;
+  font-family: "Gilroy", "Arial", "Helvetica", sans-serif;
 }
 
 a {

@@ -1,0 +1,26 @@
+.message {
+  max-width: 80%;
+  color: #F6F4F5;
+  background-color: #657CDA;
+  border-radius: 16px 16px 0px 16px;
+  margin-left: auto;
+
+  display: grid;
+  gap: 8px;
+  grid-template-columns: auto 30px 10px;
+}
+
+.message:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.text {
+  color: #F6F4F5;
+  text-align: left;
+  margin-left: 16px;
+}
+
+.time,
+.status {
+ margin-top: auto;
+}

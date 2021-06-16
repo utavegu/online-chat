@@ -1,6 +1,14 @@
 .work_space {
-  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
   background-color: #f6f4f5;
   width: 375px;
   height: 622px;
+  padding: 24px 32px;
+
+  display: grid;
+  grid-template-rows: 56px auto 48px;
 }

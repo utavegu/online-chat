@@ -1,0 +1,36 @@
+.input_area {
+  display: grid;
+  grid-template-columns: auto 48px;
+  gap: 8px;
+  position: relative;
+}
+
+.input_area input {
+  background-color: transparent;
+  /* background: #F6F4F5; */
+  border: 2px solid #C4C2C4;
+  border-radius: 14px;
+}
+
+.input_area input:focus {
+  outline: none;
+}
+
+.input_area button {
+  cursor: pointer;
+}
+
+.send {
+  width: 48px;
+  height: 48px;
+  background-color: #3454D1;
+  border-radius: 14px;
+}
+
+.attachment {
+  position: absolute;
+  top: calc(50% - 10px);
+  right: 60px;
+  width: 100px;
+  height: 20px;
+}

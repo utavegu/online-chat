@@ -1,0 +1,17 @@
+.control {
+  margin: 0 auto;
+  width: 311px;
+  height: 56px;
+  background-color: red;
+
+  display: grid;
+  grid-template-columns: 48px auto;
+}
+
+.options {
+  background-color: green;
+}
+
+.user {
+
+}

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import Context from '../context/Context';
 import s from './WorkSpace.module.css';
 import Control from './Control';
 import Chat from './Chat';
@@ -6,14 +7,17 @@ import Input from './Input';
 import Modal from './Modal';
 
 export default function WorkSpace() {
-  const [modalActive, setModalActive] = useState(false);
- // Если чат, отображать компонент Input
- // Так... а как это определять? Если в чате в объекте ссылки что-то есть (как в босаноге с каталогом), выставляй флаг "изЧат... другое название", который уже прокидываетя ниже, и в зависимости от него отрисовываются те или иные варианты
-  return (
+  // С архитектурой напарил... ладно, сейчас уже поздно переделывать
+  const [modalActive, setModalActive] = useState(false); // "из" забыл
+  // Если чат, отображать компонент Input
+  const {isConversation, setIsConversation} = useContext(Context);
+  console.log(isConversation); 
+ 
+ return (
     <main className={s.work_space}>
-      <Control />
+      <Control isConversation={isConversation}/>
       <Chat />
-      <Input setModalActive={setModalActive}/>
+      {isConversation && <Input setModalActive={setModalActive}/>}
       {/* Вообще маргины по 24 скорее всего инпуту принадлежат... ладно, пока так */}
       <Modal active={modalActive} setActive={setModalActive}>
         <b>Прикрепить</b>

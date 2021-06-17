@@ -1,0 +1,24 @@
+.options {
+  height: 70%;
+  border-right: 1px solid #C4C2C4;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.claim {
+  margin-left: 24px;
+}
+
+.claim h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.claim p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}

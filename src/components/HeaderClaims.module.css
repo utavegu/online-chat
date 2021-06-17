@@ -1,0 +1,26 @@
+.options {
+  height: 70%;
+  border-right: 1px solid #C4C2C4;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.user img {
+  /* margin: 0 24px 0; */
+  display: block;
+  background-color: red;
+  margin-left: -10px;
+}
+
+.user b {
+  font-size: 24px;
+}

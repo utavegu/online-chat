@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import s from './WorkSpace.module.css';
 import Control from './Control';
 import Chat from './Chat';
-import Message from './Message';
 import Input from './Input';
 import Modal from './Modal';
 
 export default function WorkSpace() {
   const [modalActive, setModalActive] = useState(false);
  // Если чат, отображать компонент Input
+ // Так... а как это определять? Если в чате в объекте ссылки что-то есть (как в босаноге с каталогом), выставляй флаг "изЧат... другое название", который уже прокидываетя ниже, и в зависимости от него отрисовываются те или иные варианты
   return (
     <main className={s.work_space}>
       <Control />

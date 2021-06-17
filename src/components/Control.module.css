@@ -2,16 +2,37 @@
   margin: 0 auto;
   width: 311px;
   height: 56px;
-  background-color: red;
 
   display: grid;
-  grid-template-columns: 48px auto;
+  grid-template-columns: 46px auto;
+  align-items: center;
 }
 
 .options {
-  background-color: green;
+  height: 70%;
+  border-right: 1px solid #C4C2C4;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 /* .user {
 
 } */
+
+.claim {
+  margin-left: 24px;
+}
+
+.claim h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.claim p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}

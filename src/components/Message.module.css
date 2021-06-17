@@ -8,16 +8,36 @@
   display: grid;
   gap: 8px;
   grid-template-columns: auto 30px 10px;
+
+  position: relative;
 }
 
 .message:not(:last-child) {
   margin-bottom: 8px;
 }
 
+.message.operator {
+  margin-right: auto;
+  margin-left: 0;
+  color: #121417;
+  background-color: #EAE8E9;
+  border-radius: 0px 16px 16px 16px;
+}
+
+.name {
+  position: absolute;
+  font-size: smaller;
+  color: #657CDA;
+  margin-left: 16px;
+}
+
 .text {
-  color: #F6F4F5;
   text-align: left;
   margin-left: 16px;
+}
+
+.operator .text {
+  margin-top: 32px;
 }
 
 .time,
